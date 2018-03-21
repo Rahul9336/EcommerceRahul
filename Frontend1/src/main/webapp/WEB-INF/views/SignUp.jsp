@@ -42,21 +42,21 @@ $(document).ready(function(){
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="/">Home</a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>      
+						data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>Â Â Â Â Â Â 
 						<c:if test="${!empty category}">
 							<ul class="dropdown-menu">
-								<c:forEach var="cat" items="${category}">
-									<li><a href="/Frontend1/bycategory/${cat.category_name}">${cat.category_name}</a></li>
-								</c:forEach>
+				<c:forEach var="cat" items="${category}">
+				<li><a href="/Frontend1/bycategory/${cat.category_name}">${cat.category_name}</a></li>
+				</c:forEach>
 							</ul>
 						</c:if></li>
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Brand<span class="caret"></span></a> 
-						<c:if test="${!empty brand}"></c:if>     
+						data-toggle="dropdown" href="#">Brand<span class="caret"></span></a>Â 
+						<c:if test="${!empty brand}"></c:if>Â Â Â Â Â 
 						<ul class="dropdown-menu">
-							<c:forEach var="brand" items="${brand}">
-								<li><a href="/Frontend1/bybrand/${brand.brand_name}">${brand.brand_name}</a></li>
-							</c:forEach>
+				<c:forEach var="brand" items="${brand}">
+					<li><a href="/Frontend1/bybrand/${brand.brand_name}">${brand.brand_name}</a></li>
+				</c:forEach>
 						</ul></li>
 					<li><a href="/Frontend1/cartdetail/">Cart<span class="badge">${cart}</span></a></li>
 				</ul>
